@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tip Caluclator with HTML,CSS & JS</title>
+    <link rel="stylesheet" href="/CSS/teep.css">
+    
+
+</head>
+<body>
+    <section id="main">
+        <h1>TIP CALCULATOR</h1>
+        
+            <div class="content">
+                
+
+            <div class="up">
+                <p>Bill Amount</p>
+                <input type="text" id="amount" placeholder="">$
+
+                <p>How was the service?</p>
+                <select name="for services" id="services">
+                    <option value="select">Select</option>
+                    <option value="0.25">25% - Top-Notch</option>
+                    <option value="0.2">20% - Excellent</option>
+                    <option value="0.15">15% - Good</option>
+                    <option value="0.1">10% - Bad</option>
+                    <option value="0.05">5% - Worst</option>
+                </select>
+        
+                <p>Total number of persons</p>
+                <input type="text" id="persons" placeholder="Number of people sharing the bill">
+            
+                <div>
+                <button onclick="calculateBMI()" id="submit">Submit</button>
+                <button onclick="reload()" id="clear">Clear</button>
+
+                <div class="low">
+                    <p id="tip"></p>
+                    <span id="total">0</span>$
+                    <p id="each">each</p>
+                </div>
+            
+            </div>
+
+    </section>
+    <script src="/CSS/js.js"></script>
+</body>
+</html>
